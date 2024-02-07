@@ -1,3 +1,6 @@
+default_language_version:
+  python: python3
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
@@ -13,12 +16,14 @@ repos:
     rev: 23.12.1
     hooks:
       - id: black
-        language_version: python3.11
+        language_version: python3 # Modificado de python3.11 a python3
   - repo: https://github.com/pylint-dev/pylint
     rev: v3.0.3
     hooks:
       - id: pylint
+        language_version: python3 # Añadido para asegurar la compatibilidad
   - repo: https://github.com/pycqa/isort
     rev: 5.13.2
     hooks:
       - id: isort
+        language_version: python3 # Añadido para asegurar la compatibilidad

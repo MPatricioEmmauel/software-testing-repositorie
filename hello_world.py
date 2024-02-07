@@ -11,14 +11,14 @@ def greet_user(name):
     Returns:
     str: A greeting string.
     """
-    return f"Hello, {name}!"
+    return f"Hello World, {name}!"
 
 
 def main():
     """
     Main function to prompt the user for their name and print a greeting.
     """
-    name = input("Enter your name: ")
+    name = input("Escribe tu Nombre: ")
     greeting = greet_user(name)
     print(greeting)
 
